@@ -1,0 +1,362 @@
+<div class="" tabindex="0"><div><style type="text/css" id="static">
+    /*Font support for MAC*/
+    @font-face{font-family:'Century Gothic';font-weight:normal;font-style:normal;src:local('Century Gothic'),url('/blobcontent/zty/fonts/CenturyGothic.ttf') format('truetype')}
+    @font-face{font-family:'Century Gothic';font-weight:bold;font-style:normal;src:local('Century Gothic Bold'),url('/blobcontent/zty/fonts/CenturyGothicBold.ttf') format('truetype')}
+    @font-face{font-family:'Century Gothic';font-weight:bold;font-style:italic;src:local('Century Gothic Bold Italic'),url('/blobcontent/zty/fonts/CenturyGothicBoldItalic.ttf') format('truetype')}
+    @font-face{font-family:'Century Gothic';font-weight:normal;font-style:italic;src:local('Century Gothic Italic'),url('/blobcontent/zty/fonts/CenturyGothicItalic.ttf') format('truetype')}
+
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+    body{text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
+    .skn-srz4 ol,.skn-srz4 ul{list-style:none}
+    .skn-srz4 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+    /*START content disc style for LI*/
+    .skn-srz4 ul,.skn-srz4 li{margin:0;padding:0;list-style-type:disc}
+    .skn-srz4 ul li{margin:0 0 0 16px;padding:0}
+    @-moz-document url-prefix() {.skn-srz4 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+    /*END content disc style for LI*/
+
+    /*table style*/
+    .skn-srz4 table.skills,.skn-srz4 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+    .skn-srz4 table.skills th,.skn-srz4 table.skills td{width:20%;text-align:center}
+    .skn-srz4 table.skills .skillname,.skn-srz4 table.skills .skillrating{text-align:left;width:35%}
+    .skn-srz4 table.skills .skillrating{width:20%}
+    .skn-srz4 table.skills .skillyears,.skn-srz4 table.skills .skilllast{width:19%}
+    .skn-srz4 table.skills .pad1{width:5%}
+    .skn-srz4 .skills .pad2,.skn-srz4 table.skills .pad3{width:1%}
+
+    /* document */
+    .skn-srz4{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;word-wrap:break-word}
+    .skn-srz4 .name{color:#fff;font-weight:700;position:relative;text-align:left;word-wrap:break-word}
+    .skn-srz4 .address .singlecolumn{margin-left:0!important}
+    .skn-srz4 .heading{border-bottom:1px solid #d5d6d6;font-weight:700;letter-spacing:0;line-height:15px;margin-bottom:10px;padding:0 0 3px}
+    .skn-srz4 .sectiontitle{color:#252932;word-wrap:break-word}
+    .skn-srz4 .degreeGap{margin-bottom:4px}
+    .skn-srz4 .locationGap{margin-top:4px}
+    .skn-srz4 .firstparagraph{margin-top:0!important}
+    .skn-srz4 .topsection{background:#373d48;padding:15px 15px 20px}
+    .skn-srz4 .section:empty{display:none}
+    .skn-srz4 .education .joblocation{font-style:italic}
+    .skn-srz4 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;padding-bottom:20px;table-layout:fixed;width:100%}
+    .skn-srz4 .resumeTitle{color:#fff;padding-top:7px}
+
+    /*left and right css*/
+    .skn-srz4 .right-box,.skn-srz4 .left-box{padding:15px}
+    .skn-srz4 .right-box{background-color:#f4f4f4;box-sizing:content-box;display:table-cell;letter-spacing:.2px;vertical-align:top}
+    .skn-srz4 .left-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px}
+    .skn-srz4 .paragraph .singlecolumn{position:relative}
+    .skn-srz4 .left-box .summary .paragraph .singlecolumn{margin-left:0!important}
+    .skn-srz4 .left-box{display:table-cell;letter-spacing:.2px;vertical-align:top}
+    .skn-srz4 .firstsection,.skn-srz4 .left-box .section:first-child,.skn-srz4 .right-box .section:first-child{padding-top:0!important}
+
+    /*common css*/
+    .skn-srz4 .txtBold{font-weight:bold}
+    .skn-srz4 .txtItl{font-style:italic}
+    .skn-srz4 .paddedline{display:block}
+    .skn-srz4 .mt5{margin-top:5px}
+    .skn-srz4 .word-break{word-wrap:break-word}
+    .skn-srz4 .ratingWrapper{text-align:right;position:relative}
+    .skn-srz4 .ratingWrapper .noLnht{line-height:0}
+    .skn-srz4 svg{height:13px}
+
+    .skn-srz4 > div:not(.topsection){min-height:inherit}
+    /* Issues fix for builder page */
+    .skn-srz4 .ratingWrapper .default-fill{fill:#373d48}
+    
+
+    /* Only for firefox */
+    @-moz-document url-prefix() {.skn-srz4 .parentContainer{height:1px}}
+
+    /* For dates fix */
+    .skn-srz4 .left-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+    .skn-srz4 .right-box .hidedates{display:none}
+    .skn-srz4 .paragraph.datespara:after{content:'';display:table;clear:both}
+
+    /*PICT*/
+    .skn-srz4 .prflPic,.skn-srz4 .prflPic > div{width:154px;height:154px}
+    .skn-srz4 .prflPic img{min-width:100%;max-width:100%;min-height:100%;max-height:100%}
+</style><style type="text/css" id="dynamic" data-time="Tue Aug 23 2022 16:25:39 GMT+0530 (India Standard Time)">
+    .skn-srz4,.skn-srz4 table{line-height:18px}
+    .skn-srz4.pagesize{width:595px}
+    .skn-srz4.fontface{font-family:Century Gothic}
+    .skn-srz4.fontsize{font-size:11px}
+    .skn-srz4 .section{padding-top:20px}
+    .skn-srz4 .right-box .section:after{padding-bottom:10px}
+    .skn-srz4 .paragraph{margin-top:10px}
+    .skn-srz4 .singlecolumn,.skn-srz4 .maincolumn{word-wrap:break-word}
+    .skn-srz4 .left-box .singlecolumn,.skn-srz4 .left-box maincolumn{margin-left:0px}
+    .skn-srz4 table.skills td{padding-top:5px}
+    .skn-srz4 .jobtitle,.skn-srz4 .degree,.skn-srz4 .programline{font-size:14px}
+    .skn-srz4 .name{font-size:36px;line-height:39px}
+    .skn-srz4 .topsection{background-color:#1a409a}
+    .skn-srz4 .heading{line-height:22px}
+    .skn-srz4 .sectiontitle{font-size:16px;color:#1a409a}
+    .skn-srz4 .right-box{width:154px}
+    .skn-srz4 .left-box .paragraph .singlecolumn{margin-left:91px}
+    .skn-srz4 .left-box .paddedline.date-content{left:-91px}
+    .skn-srz4 .resumeTitle{font-size:18px}
+    .skn-srz4 .ratingWrapper .default-fill{fill:#1a409a}
+
+    /*fixes for builder page*/
+    #displayResume .skn-srz4.document{min-height:792px}
+    .skn-srz4 .sortable-item .rating-wrapper span{top:0}
+    .skn-srz4 .left-box > .sortable-item,.skn-srz4 .right-box > .sortable-item{padding-top:20px}
+    html.c-rowloc-in.hide-photo .skn-srz4 .right-box .sortable-item.data-PICT + .sortable-item{padding-top:0px !important}
+</style></div><div class="document fontsize fontface vmargins hmargins  pagesize skn-srz4 SRZ4  ZTY "><div id="CONTAINER_PARENT_0" class="topsection"><div id="CONTAINER_0"><div data-react-beautiful-dnd-draggable="4" class="sortable-item section-container SortableItem-sibling  data-NAME"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_NAMEdb0d780f-85d1-4aeb-a837-1b3494c9cac4" class="section notdraggable SECTION_NAME    " data-section-cd="NAME"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_NAME_b5c9e9e2-6467-434e-26c7-0e529bc934a1" class="paragraph PARAGRAPH_NAME firstparagraph  "><div>
+                    <div class="name word-break">
+                        <span id="FIELD_FNAM">Vishnu Vandith </span>
+                        <span class="word-break" id="FIELD_LNAM">Guntupalli</span>
+                    </div>
+                    <div class="resumeTitle" id="FIELD_DCTL">Full Stack Engineer</div>
+                </div></div></div></div></div></div></div></div></div><div id="CONTAINER_PARENT_1" class="parentContainer"><div id="CONTAINER_1" class="left-box"><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-SUMM"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_SUMMdf02a4c7-a7e5-4b7a-8ce5-a90b979e8722" class="section summary notdraggable SECTION_SUMM    " data-section-cd="SUMM"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_SUMM_b12ca60b-d89c-b074-f3f1-78df7d88abde" class="paragraph PARAGRAPH_SUMM firstparagraph  "><div class="clearfix doc-item">
+                    <div class="singlecolumn" id="FIELD_FRFM"><p>Detail-oriented, organized and meticulous employee. Works at fast pace to meet tight deadlines. Enthusiastic team player ready to contribute to company success.</p></div>
+                </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-EXPR"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_EXPR82ab0b17-6492-4d05-ac1f-7e2dff477399" class="section experience SECTION_EXPR   multi-para has-title " data-section-cd="EXPR"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_EXPR">Work History<span title=" Work History " class="rename-section text-rename"></span></div></div><div class=""><div class="sortableInner"><div id="PARAGRAPH_EXPR_ada49e3d-2b90-264e-8b04-1adc58724b5d" class="paragraph datespara PARAGRAPH_EXPR firstparagraph  "><div class="clearfix doc-item">
+                    <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                        <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                    </div>
+                    <div class="singlecolumn">
+                        <div class="paddedline date-content" dependency="JSTD|EDDT">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2021-07</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">Current</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <span class="paddedline" dependency="JTIT">
+                            <span class="jobtitle txtBold" id="FIELD_JTIT">Software Engineer</span>
+                        </span>
+                        <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                            <span class="companyname" id="FIELD_COMP">Openstream.ai</span><span dependency="COMP+JCIT|JSTA">, </span><span class="jobcity" id="FIELD_JCIT">Hyderabad</span><span class="jobstate" id="FIELD_JSTA"></span>
+                        </span>
+                        <span class="jobline" id="FIELD_JDES"><ul>
+<li>Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability and performance.</li>
+<li>Reviewed project specifications and designed technology solutions that met or exceeded performance expectations.</li>
+<li>Participated in architecture, design and implementation of back-end features using React, Node, Express , Angular and MongoDB.</li>
+<li>Developed robust, scalable, modular and API-centric infrastructures.</li>
+<li>Developed clear specifications for project plans using customer requirements.</li>
+<li>Integrated third-party tools and components into applications.</li>
+<li>Adjusted design parameters to incorporate new features.</li>
+<li>Provided direction and guidance to process improvements and established policies.</li>
+</ul></span>
+                    </div>
+                </div></div><div id="PARAGRAPH_EXPR_a10a5fa2-8a4a-29d3-b92a-fc5f1b37c10d" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                    <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                        <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                    </div>
+                    <div class="singlecolumn">
+                        <div class="paddedline date-content" dependency="JSTD|EDDT">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2020-06</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2022-10</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <span class="paddedline" dependency="JTIT">
+                            <span class="jobtitle txtBold" id="FIELD_JTIT">Intern [Atlassian Plug-in Developer]</span>
+                        </span>
+                        <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                            <span class="companyname" id="FIELD_COMP">Produens Labs</span><span dependency="COMP+JCIT|JSTA">, </span><span class="jobcity" id="FIELD_JCIT">Hyderabad</span><span class="jobstate" id="FIELD_JSTA"></span>
+                        </span>
+                        <span class="jobline" id="FIELD_JDES"><p>Developed Agile User story, Agile Sprint Backlog, and other templates for Confluence which helps to use the features of JIRA inside Confluence which enables the user to track the Project within Confluence<br>
+</p>
+<ul>
+<li>Developed effective improvement plans in alignment with goals and specifications.</li>
+<li>Optimized customer experience by delivering superior services and effectively troubleshooting issues.</li>
+</ul></span>
+                    </div>
+                </div></div><div id="PARAGRAPH_EXPR_513049e0-37cc-514e-58d8-1b9ff90dd66f" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                    <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                        <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                    </div>
+                    <div class="singlecolumn">
+                        <div class="paddedline date-content" dependency="JSTD|EDDT">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2021-05</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2022-07</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <span class="paddedline" dependency="JTIT">
+                            <span class="jobtitle txtBold" id="FIELD_JTIT">Intern  [React Native Developer]</span>
+                        </span>
+                        <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                            <span class="companyname" id="FIELD_COMP">Megahoot</span><span dependency="COMP+JCIT|JSTA">, </span><span class="jobcity" id="FIELD_JCIT">Florida</span><span class="jobstate" id="FIELD_JSTA"></span>
+                        </span>
+                        <span class="jobline" id="FIELD_JDES"><p>Designed and Developed <strong>Megahoot Messenger</strong> which is a highly encrypted enterprise chatting application which has features like Camera Interactions, Speech Interactions and Text Interactions</p>
+<p>Tech Stack: NodeJS, React Native, WebRTC, Express and Postgres</p>
+<ul>
+<li>Used critical thinking to break down problems, evaluate solutions and make decisions.</li>
+<li>Participated in continuous improvement by generating suggestions, engaging in problem-solving activities to support teamwork.</li>
+</ul></span>
+                    </div>
+                </div></div><div id="PARAGRAPH_EXPR_018f55cc-da2b-20bf-2958-1d1ffac2dfd3" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                    <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                        <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                    </div>
+                    <div class="singlecolumn">
+                        <div class="paddedline date-content" dependency="JSTD|EDDT">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2019-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2019-09</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <span class="paddedline" dependency="JTIT">
+                            <span class="jobtitle txtBold" id="FIELD_JTIT">Intern [Ethical Hacker, Web Application Pentester]</span>
+                        </span>
+                        <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                            <span class="companyname" id="FIELD_COMP">Indian Servers</span><span dependency="COMP+JCIT|JSTA">, </span><span class="jobcity" id="FIELD_JCIT">Hyderabad</span><span class="jobstate" id="FIELD_JSTA"></span>
+                        </span>
+                        <span class="jobline" id="FIELD_JDES"><ul>
+<li>Encrypted data and erected firewalls to protect confidential information.</li>
+<li>Conducted security audits to identify vulnerabilities.</li>
+<li>Recommend improvements in security systems and procedures.</li>
+<li>Researched and developed new computer forensic tools.</li>
+<li>Exposed critical vulnerabilities in Client's application and fixed the applications, Investigated 50+ Cyber crime cases of Financial Fraud and built tools for mass reporting of social media pages<br>
+</li>
+</ul></span>
+                    </div>
+                </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-EDUC"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_EDUC79c246ae-fd4c-416e-b0ef-b66542d01948" class="section education SECTION_EDUC   multi-para has-title " data-section-cd="EDUC"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_EDUC">Education<span title=" Education " class="rename-section text-rename"></span></div></div><div class=""><div class="sortableInner"><div id="PARAGRAPH_EDUC_6879bd18-a20f-98d8-4b09-c294c43fa3c5" class="paragraph datespara PARAGRAPH_EDUC firstparagraph  "><div class="clearfix doc-item">
+                    <div class="paddedline date-content hidedates" dependency="GRST|GRED">
+                        <span class="jobdates" dependency="GRST">2007-03</span><span dependency="GRST+GRED"> - </span><span class="jobdates" dependency="GRED">2007-03</span>
+                    </div>
+                    <div class="singlecolumn">
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_GRST" format="%Y-%m">2017-08</span><span dependency="GRST+GRED"> - </span><span class="jobdates" id="FIELD_GRED" format="%Y-%m">2021-07</span>
+                        </div>
+                        <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY">
+                            <span class="degree" id="FIELD_DGRE">Bachelor of Technology</span><span dependency="DGRE+STUY">: </span><span class="programline" id="FIELD_STUY">Computer Science</span>
+                        </span>
+                        <div class="paddedline txtItl" dependency="SCIT|SSTA|SCHO">
+                            <span class="companyname" id="FIELD_SCHO">Vidya Jyothi Institute of Technology</span><span dependency="SCHO+SSTA|SCIT"> - </span><span class="joblocation jobcity" id="FIELD_SCIT">Hyderabad</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                        </div>
+                        <span id="FIELD_FRFM"></span>
+                    </div>
+                </div></div><div id="PARAGRAPH_EDUC_fa655741-2bde-f317-19b2-dbe69ef3b00f" class="paragraph datespara PARAGRAPH_EDUC  "><div class="clearfix doc-item">
+                    <div class="paddedline date-content hidedates" dependency="GRST|GRED">
+                        <span class="jobdates" dependency="GRST">2007-03</span><span dependency="GRST+GRED"> - </span><span class="jobdates" dependency="GRED">2007-03</span>
+                    </div>
+                    <div class="singlecolumn">
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_GRST" format="%Y-%m">2015-05</span><span dependency="GRST+GRED"> - </span><span class="jobdates" id="FIELD_GRED" format="%Y-%m">2017-06</span>
+                        </div>
+                        <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY">
+                            <span class="degree" id="FIELD_DGRE">Intermediate</span><span dependency="DGRE+STUY">: </span><span class="programline" id="FIELD_STUY">MPC</span>
+                        </span>
+                        <div class="paddedline txtItl" dependency="SCIT|SSTA|SCHO">
+                            <span class="companyname" id="FIELD_SCHO">Ratna Junior College</span><span dependency="SCHO+SSTA|SCIT"> - </span><span class="joblocation jobcity" id="FIELD_SCIT">Hyderabad</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                        </div>
+                        <span id="FIELD_FRFM"></span>
+                    </div>
+                </div></div><div id="PARAGRAPH_EDUC_8ff4faa4-9392-d577-106f-8faa21b349af" class="paragraph datespara PARAGRAPH_EDUC  "><div class="clearfix doc-item">
+                    <div class="paddedline date-content hidedates" dependency="GRST|GRED">
+                        <span class="jobdates" dependency="GRST">2007-03</span><span dependency="GRST+GRED"> - </span><span class="jobdates" dependency="GRED">2007-03</span>
+                    </div>
+                    <div class="singlecolumn">
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_GRST" format="%Y-%m">2014-06</span><span dependency="GRST+GRED"> - </span><span class="jobdates" id="FIELD_GRED" format="%Y-%m">2015-06</span>
+                        </div>
+                        <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY">
+                            <span class="degree" id="FIELD_DGRE">SSC</span><span class="programline" id="FIELD_STUY"></span>
+                        </span>
+                        <div class="paddedline txtItl" dependency="SCIT|SSTA|SCHO">
+                            <span class="companyname" id="FIELD_SCHO">Narayana IIT Olympiad</span><span dependency="SCHO+SSTA|SCIT"> - </span><span class="joblocation jobcity" id="FIELD_SCIT">Hyderabad</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                        </div>
+                        <span id="FIELD_FRFM"></span>
+                    </div>
+                </div></div></div></div></div></div></div></div><div id="CONTAINER_2" class="right-box"><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-PICT"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_PICT52f996df-8ade-8384-ef46-09288274465b" class="section photo notdraggable SECTION_PICT firstsection noparagraph  " data-section-cd="PICT"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_PICT_0" class="paragraph PARAGRAPH_PICT firstparagraph placeholder-text "><div class="clearfix doc-item">
+                    <div class="prflPic">
+                        <div id="FIELD_PURL"><img class="chk" src="" alt=""> <a href="javascript:;" class="btn btn-primary btn-prfl-edit" title="Edit Photo"></a></div>
+                    </div>
+                    <div class="clear"></div>
+                </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-CNTC"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_CNTCf7252f8a-f31c-4331-adbe-e3dc8eb443cd" class="section SECTION_CNTC notdraggable    has-title " data-section-cd="CNTC"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_CNTC">Contact<span title=" Contact " class="rename-section text-rename"></span></div></div><div class=""><div class=""><div id="PARAGRAPH_CNTC_da6c377c-6f69-65df-6721-242adf4ba1b6" class="paragraph PARAGRAPH_CNTC firstparagraph  "><div class="clearfix doc-item">
+                    <div class="address">
+                        <div class="singlecolumn">
+                            <div dependency="STRT|CITY|STAT|ZIPC|ADDR">
+                                <div class="txtBold"><span class="xslt_static_change">Address </span></div>
+                                <div id="FIELD_STRT"></div>
+                                <span id="FIELD_CITY"></span>
+                                <span id="FIELD_STAT"></span>
+                                <span id="FIELD_ZIPC"></span>
+                                <span id="FIELD_ADDR">Hyderabad, India 500089</span>
+                            </div>
+                            <div class="txtBold mt5" dependency="HPHN|CPHN"><span class="xslt_static_change">Phone </span></div>
+                            <div dependency="HPHN">
+                                <span id="FIELD_HPHN">08247554052</span>
+                            </div>
+                            
+                            <div class="txtBold mt5" dependency="EMAI"><span class="xslt_static_change">E-mail </span></div>
+                            <div dependency="EMAI" class="word-break">
+                                <span id="FIELD_EMAI">vishnuvandithg@gmail.com</span>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                                                            
+                            
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-TPFL"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_TPFLc053d1e5-16d3-69b0-8724-2ad1d8044769" class="section SECTION_TPFL    has-title " data-section-cd="TPFL"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_TPFL">Technical Profile<span title=" Technical Profile " class="rename-section text-rename"></span></div></div><div class=""><div class=""><div id="PARAGRAPH_TPFL_52873e0e-9992-3f43-ff92-513a8d18547f" class="paragraph PARAGRAPH_TPFL firstparagraph  "><div class="clearfix doc-item">
+                <div class="singlecolumn maincolumn">
+                     <span class="paddedline" id="FIELD_SKC1"><ul>
+<li>Python</li>
+<li>SQL</li>
+<li>HTML</li>
+<li>JavaScript</li>
+<li>Java</li>
+<li>C++</li>
+<li>CSS</li>
+<li>Linux</li>
+</ul></span>
+                     <span class="paddedline" id="FIELD_SKC2"><ul>
+<li>PHP</li>
+<li>Node.js</li>
+<li>TypeScript</li>
+<li>MySQL</li>
+<li>MongoDB</li>
+<li>JDBC</li>
+<li>ExpressJS</li>
+<li>Neo4j</li>
+</ul></span>
+                </div>
+        </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-HILT"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_HILT3911d222-733b-4368-b0b5-dddd33da1318" class="section SECTION_HILT    has-title " data-section-cd="HILT"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_HILT">Competencies<span title=" Competencies " class="rename-section text-rename"></span></div></div><div class=""><div class="sortableInner"><div id="PARAGRAPH_HILT_2f834c27-ecae-b362-8dcc-4841c9cd0f53" class="paragraph PARAGRAPH_HILT firstparagraph  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><ul><p>Agile</p></ul></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_a738b397-f9d8-eb0d-d7b5-56e222fb7f69" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>Linux</p></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_27601fa4-74da-81e2-ec21-3a84c9404150" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>Database management software</p></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_b00b3aad-7fe6-c824-ea9a-78fe5b0b5449" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>Performance Tuning</p></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_12768cc2-ad46-1d82-f2e3-338da610b41d" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>Software Development</p></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_0544f9ca-42fc-e4b0-650f-23385196c8b2" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>Web-based software engineering</p></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_8f7a4081-5fab-1f0c-2550-3ce9bd54dec6" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>Programming</p></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_32951b0c-ba6e-9562-e583-439073b0014f" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>JavaScript framework management</p></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_5249cb63-1e0d-237e-1613-37939cf1395e" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>JavaScript</p></span>
+                        
+                    </div>
+                </div></div><div id="PARAGRAPH_HILT_07d6f2ea-5fda-240e-bf68-82deebefb650" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                    <div class="singlecolumn maincolumn">
+                        <span class="paddedline" id="FIELD_SKC1"><p>Python</p></span>
+                        
+                    </div>
+                </div></div></div></div></div></div></div></div></div></div></div>
