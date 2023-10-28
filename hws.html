@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AR NEST INVITATIONS</title>
+    <title>Amaravadi's Housewarming Invitation</title>
     <style>
       body {
         font-family: "Arial", sans-serif;
@@ -13,20 +13,38 @@
       }
 
       .thoranam-border {
+        position: relative;
         display: flex;
         flex-direction: column;
+        align-items: center;
         min-height: 100vh;
-        position: relative;
       }
 
       .thoranam-image {
         width: 30%;
         height: auto;
         margin: auto;
+      }
+
+      .thoranam-left,
+      .thoranam-right {
         position: absolute;
         top: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      .thoranam-right {
+        right: 0;
+        transform: scaleY(1);
+      }
+
+      .thoranam-bottom {
+        position: absolute;
+        bottom: 0;
         left: 0;
-        z-index: 0;
+        background-repeat: repeat-y;
+        width: 100%;
       }
 
       .content {
@@ -37,7 +55,7 @@
         text-align: center;
         max-width: 600px;
         width: 90%;
-        margin: 20px auto;
+        margin: 20px;
         position: relative;
         z-index: 1;
       }
@@ -66,14 +84,13 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 0;
       }
 
       /* Media Query for screens smaller than 768px */
       @media (max-width: 768px) {
         .content {
           padding: 20px;
-          margin-top:30%
+          z-index: 1;
         }
         h1 {
           font-size: 30px;
@@ -91,31 +108,44 @@
       </audio>
       <img class="thoranam-image top-thoranam" src="thoranam.png" alt="" />
       <div class="content">
-        <marquee direction="right" style="color: red; font-size: 20px;">
-          ||  ఓం సాయి రామ్  ||
+        <marquee direction="right" style="color: red; font-size: 20px">
+          || ఓం సాయి రామ్ || &nbsp; || ఓం నమో వేంకటేశాయ || &nbsp; || శ్రీమాత్రే
+          నమః ||
         </marquee>
-        <h1>Amarawadi's Housewarming Ceremony Invitation</h1>
+        <h1>Amaravadi's Housewarming Ceremony Invitation</h1>
         <p>
           <span class="highlight">Dear Friends and Family,</span><br /><br />
-          We are delighted to invite you to our housewarming ceremony, where
-          we will be celebrating the warmth of our new home. Your presence
-          will make this event even more special.
+          We are delighted to extend our warm invitation to our housewarming
+          ceremony, a celebration of the love and happiness that now fills our
+          new home. Your presence will undoubtedly add an extra special touch to
+          this significant occasion. The gruhapravesam and satyanarayana vratam
+          will be held on Wednesday morning at 7:41 am, with a delicious lunch
+          to follow. We sincerely hope you can join us for this memorable day.
+          <br />
+          <span class="highlight">
+            With warm regards, <br />
+            Amaravadi Venkata Sita Ram Mohan Shastry,Amaravadi Ramalakshmi , Sai
+            and Family
+          </span>
         </p>
-        <p>Thidhi: <span class="highlight">1st November 2023</span></p>
-        <p>Sumuhurtam <span class="highlight">7:15 Am</span></p>
+        <p>Date: <span class="highlight">1st November 2023</span></p>
+        <p>Sumuhurtam: <span class="highlight">7:41 AM</span></p>
         <p>
-          Address: <span class="highlight"
+          Address:
+          <span class="highlight"
             ><a
               href="https://maps.app.goo.gl/Qwkq6WiyHdLCsFAr8"
-              style="color: #ff8c00;"
-              >THE NEST APARTMENTS, C-BLOCK, Sri Laxmi Nagar Colony,Landmark: Near Marrichettu ,Manikonda Jagir, Hyderabad, Telangana 500089</a
+              style="color: #ff8c00"
+              >THE NEST APARTMENTS, C-BLOCK, Sri Laxmi Nagar Colony,Landmark:
+              Near Marrichettu ,Manikonda Jagir, Hyderabad, Telangana 500089</a
             ></span
           >
         </p>
-        <marquee direction="right" style="color: red; font-size: 20px;">
-          please click on the address to open in google maps
-        </marquee>
+        <p style="color: red">
+          Please click on the address to open in google maps
+        </p>
       </div>
     </div>
+    <img class="thoranam-image thoranam-bottom" src="thoranam.png" alt="" />
   </body>
 </html>
