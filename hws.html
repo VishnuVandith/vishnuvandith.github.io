@@ -15,7 +15,9 @@
       .thoranam-border {
         position: relative;
         display: flex;
-        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
       }
 
       .thoranam-image {
@@ -33,14 +35,8 @@
       }
 
       .thoranam-right {
-        .thoranam-right {
-          right: 0;
-          transform: scaleY();
-          display: flex;
-          flex-direction: column-reverse;
-          /* height: 78%; */
-          width: 57%;
-        }
+        right: 0;
+        transform: scaleY(1);
       }
 
       .thoranam-bottom {
@@ -48,6 +44,7 @@
         bottom: 0;
         left: 0;
         background-repeat: repeat-y;
+        width: 100%;
       }
 
       .content {
@@ -57,7 +54,8 @@
         padding: 40px;
         text-align: center;
         max-width: 600px;
-        margin: auto;
+        width: 90%;
+        margin: 20px;
         position: relative;
         z-index: 1;
       }
@@ -81,66 +79,36 @@
         text-align: center;
         margin-top: 20px;
       }
-      .top-thoranam{
+      .top-thoranam {
         position: absolute;
-    top: 0;
-    left: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      /* Media Query for screens smaller than 768px */
+      @media (max-width: 768px) {
+        .content {
+          padding: 20px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
       }
     </style>
   </head>
   <body>
-   
-      
     <div class="thoranam-border">
-
-        <audio autoplay loop>
-            <source src="music.mp3" type="audio/mp3">
-        </audio>    
-        <!-- <img class="thoranam-image thoranam-bottom" src="thoranam.png" alt="" /> -->
-        <img
-          class="thoranam-image top-thoranam"
-          src="thoranam.png"
-          alt=""
-          
-        />
-        <img
-          class=" thoranam-image top-thoranam"
-          src="thoranam.png"
-          alt=""
-          style="margin-left: 15%"
-        /><img
-          class="thoranam-image top-thoranam"
-          src="thoranam.png"
-          alt=""
-          style="margin-left: 25%"
-        /><img
-          class="thoranam-image top-thoranam"
-          src="thoranam.png"
-          alt=""
-          style="margin-left: 35%"
-        />
-        <img
-          class="thoranam-image top-thoranam"
-          src="thoranam.png"
-          alt=""
-          style="margin-left: 45%"
-        />
-        <img
-          class="thoranam-image top-thoranam"
-          src="thoranam.png"
-          alt=""
-          style="margin-left: 55%"
-        />
-        <img
-          class="thoranam-image top-thoranam"
-          src="thoranam.png"
-          alt=""
-          style="margin-left: 80%"
-        />
-      </body>
+      <audio autoplay loop>
+        <source src="music.mp3" type="audio/mp3" />
+      </audio>
+      <img class="thoranam-image top-thoranam" src="thoranam.png" alt="" />
       <div class="content">
-        <marquee direction="right" style="color: red; font-size: 20px;">
-          ||  ఓం సాయి రామ్  ||
+        <marquee direction="right" style="color: red; font-size: 20px">
+          || ఓం సాయి రామ్ ||
         </marquee>
         <h1>Amarawadi's Housewarming Ceremony Invitation</h1>
         <p>
@@ -151,35 +119,22 @@
         </p>
         <p>Thidhi: <span class="highlight">1st November 2023</span></p>
         <p>Sumuhurtam <span class="highlight">7:15 Am</span></p>
-        <p>Address: <span class="highlight"><a href="https://maps.app.goo.gl/Qwkq6WiyHdLCsFAr8" style="color: #ff8c00;">THE NEST APARTMENTS, C-BLOCK, Sri Laxmi Nagar Colony,Landmark: Near Marrichettu ,Manikonda Jagir, Hyderabad, Telangana 500089</a></span></p>
-       
-        <marquee direction="right" style="color: red; font-size: 20px;">
-           please click on the address to open in google maps        </marquee>
+        <p>
+          Address:
+          <span class="highlight"
+            ><a
+              href="https://maps.app.goo.gl/Qwkq6WiyHdLCsFAr8"
+              style="color: #ff8c00"
+              >THE NEST APARTMENTS, C-BLOCK, Sri Laxmi Nagar Colony,Landmark:
+              Near Marrichettu ,Manikonda Jagir, Hyderabad, Telangana 500089</a
+            ></span
+          >
+        </p>
+        <marquee direction="right" style="color: red; font-size: 20px">
+          please click on the address to open in google maps
+        </marquee>
       </div>
-      
     </div>
     <img class="thoranam-image thoranam-bottom" src="thoranam.png" alt="" />
-    <img
-      class="thoranam-image thoranam-bottom"
-      src="thoranam.png"
-      alt=""
-      style="margin-left: 25%"
-    />
-    <img
-      class="thoranam-image thoranam-bottom"
-      src="thoranam.png"
-      alt=""
-      style="margin-left: 45%"
-    /><img
-      class="thoranam-image thoranam-bottom"
-      src="thoranam.png"
-      alt=""
-      style="margin-left: 65%"
-    /><img
-      class="thoranam-image thoranam-bottom"
-      src="thoranam.png"
-      alt=""
-      style="margin-left: 85%"
-    />
   </body>
 </html>
